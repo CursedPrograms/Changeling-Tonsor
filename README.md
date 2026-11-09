@@ -84,7 +84,7 @@ On the command line: `run.bat you.jpg hairstyle.jpg -o out.png` (`--colour other
 
 - It knows the hair StyleGAN2 learned from FFHQ's photos. Long, short, wavy, straight, bobs and colours work well.
   Braids, beads, pigtails and other elaborate styles don't carry over: a goth's red braided pigtails came out as
-  loose pinkish blonde hair.
+  loose pinkish blonde hair, and short twists on a woman came out as short dark hair without the twists.
 - The result is the face frame, not the whole photo.
 - Shave suits stubble and short beards; on a full beard it leaves a smudge: use the AI **Clean shaven** for that.
 - Use it on yourself, on generated people, or on people who agreed.
