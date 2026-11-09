@@ -1,0 +1,8 @@
+# HairFastGAN: cloned by run.bat (its own repo, MIT); patched by tonsor/patch_hairfast.py
+HairFastGAN/
+psdenv/
+__pycache__/
+*.pyc
+# your hairstyle pictures stay on this PC
+hairstyles/*
+!hairstyles/README.md

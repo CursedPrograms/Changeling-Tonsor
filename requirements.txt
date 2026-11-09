@@ -1,0 +1,21 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+torchvision==0.20.1
+numpy
+opencv-python
+pillow
+scipy
+scikit-image
+scikit-learn
+dlib-bin
+face_alignment
+addict
+ftfy
+regex
+tqdm
+matplotlib
+gdown
+dill
+pyyaml
+customtkinter==5.2.2
+clip @ git+https://github.com/openai/CLIP.git

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Changeling Tonsor: anyone's hairstyle, on you</title>
+<meta name="description" content="Changeling Tonsor: anyone's hairstyle on you, with HairFastGAN. Part of the Changeling family.">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Changeling Tonsor">
+<meta property="og:description" content="Anyone's hairstyle, on you.">
+<meta property="og:image" content="assets/tonsor_samples.jpg">
+<link rel="icon" href="https://cursedprograms.github.io/Changeling-Studio/site/icon.svg">
+<link rel="stylesheet" href="https://cursedprograms.github.io/Changeling-Studio/site/changeling.css">
+</head>
+<body data-changeling="Tonsor">
+
+<header>
+  <div class="wrap">
+    <img src="https://cursedprograms.github.io/Changeling-Studio/site/logo.svg" alt="The Changeling logo" width="110" height="110">
+    <div class="eyebrow">Changeling</div>
+    <h1>Tonsor</h1>
+    <p class="tagline">Anyone's hairstyle, on you</p>
+    <p class="lede">A <em>tonsor</em> was a Roman barber. Give Changeling Tonsor a photo of you and a photo of anyone whose hair you want: their cut, length and parting, and its colour (or another photo's colour), on your own face.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/CursedPrograms/Changeling-Tonsor">View on GitHub</a>
+      <a class="btn" href="#use">Use it</a>
+      <a class="btn" href="#family">The Changeling family</a>
+    </div>
+    <div class="tags">
+      <span class="tag">HairFastGAN</span><span class="tag">StyleGAN2</span><span class="tag">CUDA</span><span class="tag">Python</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="samples">
+    <h2>What it looks like</h2>
+    <p>Each row: you, the hairstyle, and you with it. About 20 seconds each. Every face is an AI-generated person who
+      doesn't exist. Click to enlarge.</p>
+    <figure class="sheet"><img id="sheet" src="assets/tonsor_samples.jpg" alt="You, the hairstyle, and you with it" loading="lazy"></figure>
+  </section>
+
+  <section id="use">
+    <h2>Use it</h2>
+    <ol class="steps">
+      <li>Python 3.9 - 3.12 and an NVIDIA GPU (6 GB works).</li>
+      <li>Start <code>run.bat</code> (or <code>run.ps1</code>, <code>run.sh</code>): it gets HairFastGAN and its models the first time.</li>
+      <li><strong>Open photo of you</strong>, pick a hairstyle photo (and another for the colour if you like), press <strong>Cut</strong>.</li>
+    </ol>
+    <figure class="sheet"><img src="assets/window.png" alt="Changeling Tonsor's window" loading="lazy"></figure>
+  </section>
+
+  <section id="limits">
+    <h2>Its limits</h2>
+    <p>It knows the hair StyleGAN2 learned from FFHQ's photos: long, short, wavy, straight, bobs and colours work well;
+      braids, beads and pigtails don't carry over. The result is the face frame. Use it on yourself, on generated people,
+      or on people who agreed.</p>
+  </section>
+
+  <section id="qr">
+    <h2>This page on your phone</h2>
+    <figure class="sheet"><img src="assets/site-qr.png" alt="QR code to this page" width="220" loading="lazy"></figure>
+  </section>
+
+  <section id="family"></section>
+</main>
+
+<div id="lightbox" class="lightbox" hidden><img alt=""></div>
+
+<footer id="site-footer">&copy; Cursed Entertainment 2026</footer>
+<script src="https://cursedprograms.github.io/Changeling-Studio/site/family.js"></script>
+<script src="https://cursedprograms.github.io/RIFT/site/footer.js"></script>
+</body>
+</html>
