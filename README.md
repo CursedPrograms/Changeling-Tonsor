@@ -20,8 +20,8 @@ Every face here is an AI-generated person who doesn't exist.
 ![You, the hairstyle, and you with it](assets/tonsor_samples.jpg)
 
 *Part of the Changeling family, all together in [Changeling Studio](https://github.com/CursedPrograms/Changeling-Studio):
-[Simia](https://github.com/CursedPrograms/Changeling-Simia) ·
-[Simia Realtime](https://github.com/CursedPrograms/Changeling-Simia-Realtime) ·
+[Imago](https://github.com/CursedPrograms/Changeling-Imago) ·
+[Imago Realtime](https://github.com/CursedPrograms/Changeling-Imago-Realtime) ·
 [Tiresias](https://github.com/CursedPrograms/Changeling-Tiresias) (gender) ·
 [Chronos](https://github.com/CursedPrograms/Changeling-Chronos) (age) ·
 [Natio](https://github.com/CursedPrograms/Changeling-Natio) (where in the world) ·
