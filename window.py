@@ -26,6 +26,20 @@ TAGLINE = "the barber: anyone's hairstyle on you, and your beard"
 GITHUB = "https://github.com/CursedPrograms/Changeling-Tonsor"
 KOFI = "https://ko-fi.com/cursedentertainment"
 PINK = "#e0408a"
+
+BLUE, BLUE_HOVER = "#007ab7", "#005184"     # the Cursed site's blue: the important buttons, and "male"
+
+
+def gender_tint(seg):
+    """Colours a gender selector by what's picked: female pink, male blue, anything else the usual pink."""
+    def tint(value=None):
+        v = (value or seg.get() or "").lower()
+        colour = PINK if ("female" in v or "woman" in v) else BLUE if ("male" in v or v == "man") else PINK
+        seg.configure(selected_color=colour, selected_hover_color=colour)
+    old = seg.cget("command")
+    seg.configure(command=lambda v: (tint(v), old(v) if old else None))
+    tint()
+
 HAIRSTYLES = os.path.join(HERE, "hairstyles")
 IMAGE_TYPES = [("Pictures", "*.png *.jpg *.jpeg *.webp *.bmp *.jfif"), ("All files", "*.*")]
 PICTURES = (".png", ".jpg", ".jpeg", ".webp", ".bmp", ".jfif")
@@ -154,7 +168,7 @@ class Window:
                                              cursor="hand2")
         self.thumbs["colour"].bind("<Button-1>", lambda e: self.open("colour"))
 
-        self.cut_btn = ctk.CTkButton(side, text="Cut  (Enter)", height=42, font=ctk.CTkFont(size=15, weight="bold"),
+        self.cut_btn = ctk.CTkButton(side, fg_color=BLUE, hover_color=BLUE_HOVER, text="Cut  (Enter)", height=42, font=ctk.CTkFont(size=15, weight="bold"),
                                      command=self.cut)
         self.cut_btn.pack(fill="x", padx=12, pady=(18, 6))
         self.bar = ctk.CTkProgressBar(side, mode="determinate")
