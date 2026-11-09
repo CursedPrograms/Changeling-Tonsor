@@ -13,7 +13,7 @@
 
 **Website:** https://cursedprograms.github.io/Changeling-Tonsor/
 
-Anyone's hairstyle, on you. A *tonsor* was a Roman barber (a *tonstrina* was his shop). Give Tonsor a photo of you and a photo of anyone
+Anyone's hairstyle on you, and your beard. A *tonsor* was a Roman barber (a *tonstrina* was his shop). Give Tonsor a photo of you and a photo of anyone
 whose hair you want: their cut, length and parting, and its colour (or another photo's colour), on your own face.
 Every face here is an AI-generated person who doesn't exist.
 
@@ -32,6 +32,23 @@ realtime: [Tiresias](https://github.com/CursedPrograms/Changeling-Tiresias-Realt
 [Chronos](https://github.com/CursedPrograms/Changeling-Chronos-Realtime) ·
 [Natio](https://github.com/CursedPrograms/Changeling-Natio-Realtime) ·
 [Cosmetics](https://github.com/CursedPrograms/Changeling-Cosmetics-Realtime).*
+
+## The beard
+
+The barber does beards too (they moved here from Changeling Cosmetics):
+
+- **Beard colour** (black to white, ginger, blonde), **Stubble** (painted in: a shadow of a beard) and **Shave** (the
+  face's own skin back over stubble or a short beard), each with its strength. They work on the new hairstyle or on
+  your photo as it is, and answer at once.
+- **AI beards** (a full beard, a goatee, a moustache, clean shaven) through
+  [AetherCanvas AI](https://github.com/CursedPrograms/AetherCanvas-AI) when it's running; **Undo the AI beard**.
+
+![Beard colour, stubble, and a white beard made dark](assets/beard_samples.jpg)
+
+How: dlib's 68 face points give the beard area (the jaw from cheek to cheek and a little past it, up to the
+nostrils, without the lips), and BiSeNet keeps it off the background and clothes. Inside it, the beard is whatever
+is clearly darker than the face's skin, or lighter and greyer (a white beard on darker skin). The colour is blended
+in LAB, so each hair's light and shade stay. Both models come with HairFastGAN's, so the beard needs nothing extra.
 
 ## How it works
 
@@ -69,6 +86,7 @@ On the command line: `run.bat you.jpg hairstyle.jpg -o out.png` (`--colour other
   Braids, beads, pigtails and other elaborate styles don't carry over: a goth's red braided pigtails came out as
   loose pinkish blonde hair.
 - The result is the face frame, not the whole photo.
+- Shave suits stubble and short beards; on a full beard it leaves a smudge: use the AI **Clean shaven** for that.
 - Use it on yourself, on generated people, or on people who agreed.
 
 ## Licenses
