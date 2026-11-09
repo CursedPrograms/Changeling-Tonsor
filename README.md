@@ -40,6 +40,8 @@ The barber does beards too (they moved here from Changeling Cosmeta):
 - **Beard colour** (black to white, ginger, blonde), **Stubble** (painted in: a shadow of a beard) and **Shave** (the
   face's own skin back over stubble or a short beard), each with its strength. They work on the new hairstyle or on
   your photo as it is, and answer at once.
+- **AI hairstyle:** describe any hairstyle ("a pink pixie cut with an undercut") and AetherCanvas AI draws it on you,
+  keeping your face. For the styles HairFastGAN can't carry (braids, beads, pigtails), this is the way.
 - **AI beards** (a full beard, a goatee, a moustache, clean shaven) through
   [AetherCanvas AI](https://github.com/CursedPrograms/AetherCanvas-AI) when it's running; **Undo the AI beard**.
 

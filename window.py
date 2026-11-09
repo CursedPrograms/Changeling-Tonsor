@@ -232,10 +232,17 @@ class Window:
             b.grid(row=i // 2, column=i % 2, sticky="ew", padx=2, pady=2)
             grid.grid_columnconfigure(i % 2, weight=1)
             self.ac_buttons.append(b)
+        ctk.CTkLabel(side, text="AI hairstyle: describe it", text_color="gray70").pack(anchor="w", padx=12, pady=(8, 0))
+        self.hair_prompt = ctk.CTkTextbox(side, height=56, wrap="word")
+        self.hair_prompt.insert("1.0", "a pink pixie cut with an undercut")
+        self.hair_prompt.pack(fill="x", padx=12, pady=2)
+        b = ctk.CTkButton(side, text="Make that hairstyle", state="disabled", command=self.ai_hair)
+        b.pack(fill="x", padx=12, pady=(2, 0))
+        self.ac_buttons.append(b)
         self.ac_note = ctk.CTkLabel(side, text="Looking for AetherCanvas AI ...", text_color="gray55", wraplength=270,
                                     justify="left")
         self.ac_note.pack(anchor="w", padx=12)
-        self.undo_btn = ctk.CTkButton(side, text="Undo the AI beard", state="disabled", fg_color="gray25",
+        self.undo_btn = ctk.CTkButton(side, text="Undo the AI edit", state="disabled", fg_color="gray25",
                                       command=self.undo_ai_beard)
         self.undo_btn.pack(fill="x", padx=12, pady=(4, 0))
         threading.Thread(target=self._look_for_aethercanvas, daemon=True).start()
@@ -344,6 +351,14 @@ class Window:
             return f"Done: {name}. The beard tools now work on it."
         self._run(work, f"{name}: AetherCanvas AI is editing")
         self.undo_btn.configure(state="normal")
+
+    def ai_hair(self):
+        """Any hairstyle you can describe: your words, sent to AetherCanvas AI as an edit that keeps the face."""
+        words = self.hair_prompt.get("1.0", "end").strip()
+        if not words:
+            return
+        self.ai_beard("Your hairstyle", f"Change the hairstyle to {words}. Keep the face, the expression, the skin, "
+                                        "the clothes and the background exactly the same.")
 
     def undo_ai_beard(self):
         self.edited = None
