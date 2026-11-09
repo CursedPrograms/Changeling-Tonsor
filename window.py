@@ -4,7 +4,7 @@ Open a photo of you, then a hairstyle: any photo of someone whose hair you want 
 colour comes with it, or from a third photo. Cut (Enter) runs on its own thread with a completion bar; the result is
 the face frame, as the other Changelings' are. Save writes it next to your photo, or wherever you choose.
 
-The beard (moved here from Changeling Cosmetics: the barber does both): colour it, paint stubble in, shave it, on
+The beard (moved here from Changeling Cosmeta: the barber does both): colour it, paint stubble in, shave it, on
 the new hairstyle or on your photo as it is; and the AI beards (a full beard, a goatee, a moustache, clean shaven)
 through AetherCanvas AI when it's running.
 """

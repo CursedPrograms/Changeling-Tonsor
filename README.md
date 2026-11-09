@@ -25,17 +25,17 @@ Every face here is an AI-generated person who doesn't exist.
 [Tiresias](https://github.com/CursedPrograms/Changeling-Tiresias) (gender) ·
 [Chronos](https://github.com/CursedPrograms/Changeling-Chronos) (age) ·
 [Natio](https://github.com/CursedPrograms/Changeling-Natio) (where in the world) ·
-[Cosmetics](https://github.com/CursedPrograms/Changeling-Cosmetics) (makeup, hair, beards) ·
+[Cosmeta](https://github.com/CursedPrograms/Changeling-Cosmeta) (makeup, hair, beards) ·
 [Echo](https://github.com/CursedPrograms/Changeling-Echo) (voices) ·
 **Tonsor** (hairstyles) ·
 realtime: [Tiresias](https://github.com/CursedPrograms/Changeling-Tiresias-Realtime) ·
 [Chronos](https://github.com/CursedPrograms/Changeling-Chronos-Realtime) ·
 [Natio](https://github.com/CursedPrograms/Changeling-Natio-Realtime) ·
-[Cosmetics](https://github.com/CursedPrograms/Changeling-Cosmetics-Realtime).*
+[Cosmeta](https://github.com/CursedPrograms/Changeling-Cosmeta-Realtime).*
 
 ## The beard
 
-The barber does beards too (they moved here from Changeling Cosmetics):
+The barber does beards too (they moved here from Changeling Cosmeta):
 
 - **Beard colour** (black to white, ginger, blonde), **Stubble** (painted in: a shadow of a beard) and **Shave** (the
   face's own skin back over stubble or a short beard), each with its strength. They work on the new hairstyle or on

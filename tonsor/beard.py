@@ -1,5 +1,5 @@
 """beard.py - the barber's other half: colour a beard, paint stubble in, shave it off (moved here from Changeling
-Cosmetics, so everything hair is in Tonsor).
+Cosmeta, so everything hair is in Tonsor).
 
     barber = Barber()
     face = barber.read(rgb)                 # dlib's 68 face points and BiSeNet's skin and lips
@@ -109,7 +109,7 @@ class Barber:
         return labels[pad:pad + h, pad:pad + w] if pad else labels
 
 
-# ---- the masks and the painting (the same maths as Changeling Cosmetics' had)
+# ---- the masks and the painting (the same maths as Changeling Cosmeta' had)
 def rgb_of(hex_colour):
     h = hex_colour.lstrip("#")
     return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))

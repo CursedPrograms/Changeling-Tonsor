@@ -1,4 +1,4 @@
-# BiSeNet face parsing (zllrunning/face-parsing.PyTorch, MIT), as HairFastGAN ships it (via Changeling Cosmetics: no ImageNet download).
+# BiSeNet face parsing (zllrunning/face-parsing.PyTorch, MIT), as HairFastGAN ships it (via Changeling Cosmeta: no ImageNet download).
 #!/usr/bin/python
 # -*- encoding: utf-8 -*-
 
