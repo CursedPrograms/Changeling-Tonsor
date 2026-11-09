@@ -26,7 +26,8 @@ Every face here is an AI-generated person who doesn't exist.
 [Chronos](https://github.com/CursedPrograms/Changeling-Chronos) (age) ·
 [Natio](https://github.com/CursedPrograms/Changeling-Natio) (where in the world) ·
 [Cosmetics](https://github.com/CursedPrograms/Changeling-Cosmetics) (makeup, hair, beards) ·
-[Echo](https://github.com/CursedPrograms/Changeling-Echo) (voices) · **Tonsor** (hairstyles) ·
+[Echo](https://github.com/CursedPrograms/Changeling-Echo) (voices) ·
+**Tonsor** (hairstyles) ·
 realtime: [Tiresias](https://github.com/CursedPrograms/Changeling-Tiresias-Realtime) ·
 [Chronos](https://github.com/CursedPrograms/Changeling-Chronos-Realtime) ·
 [Natio](https://github.com/CursedPrograms/Changeling-Natio-Realtime) ·
