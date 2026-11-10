@@ -13,6 +13,7 @@ import threading
 import time
 import tkinter as tk
 import webbrowser
+from gallery import remember, show as show_gallery
 from tkinter import filedialog
 
 import customtkinter as ctk
@@ -179,6 +180,7 @@ class Window:
         self._beard_controls(side)
         self.save_btn = ctk.CTkButton(side, text="Save  (Ctrl+S)", command=self.save, state="disabled")
         self.save_btn.pack(fill="x", padx=12, pady=(10, 0))
+        ctk.CTkButton(side, text="Gallery", fg_color="transparent", border_width=1, command=self.gallery).pack(fill="x", padx=12, pady=(6, 0))
 
         foot = ctk.CTkFrame(side, fg_color="transparent")
         foot.pack(fill="x", padx=12, pady=(18, 6))
@@ -475,6 +477,10 @@ class Window:
         self.result = self.edited = None
         self._run(work, "Finding the faces, moving the hair, blending")
 
+    def gallery(self):
+        """Everything made with the Changelings (saving still asks where; the gallery lists it too)."""
+        show_gallery(self.root, "Tonsor")
+
     def save(self):
         picture = self.final()
         if picture is None:
@@ -487,6 +493,7 @@ class Window:
                                             filetypes=[("PNG", "*.png"), ("JPEG", "*.jpg")])
         if path and write_rgb(path, picture):
             self.status.configure(text=f"Saved {os.path.basename(path)}")
+            remember(path, "Tonsor")
 
     def run(self):
         self.root.mainloop()
