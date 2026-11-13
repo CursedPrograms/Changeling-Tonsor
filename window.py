@@ -1,4 +1,4 @@
-"""window.py - Changeling Tonsor's window, in Changeling's look (customtkinter, the Cursed pink).
+"""window.py - Changeling Tonsor's window, in Changeling's look (customtkinter, the Atelier blue).
 
 Open a photo of you, then a hairstyle: any photo of someone whose hair you want (or one from hairstyles/). Its
 colour comes with it, or from a third photo. Cut (Enter) runs on its own thread with a completion bar; the result is
@@ -26,7 +26,7 @@ NAME = "Changeling Tonsor"
 TAGLINE = "the barber: anyone's hairstyle on you, and your beard"
 GITHUB = "https://github.com/CursedPrograms/Changeling-Tonsor"
 KOFI = "https://ko-fi.com/cursedentertainment"
-PINK = "#e0408a"
+PINK = "#007bb7"
 
 BLUE, BLUE_HOVER = "#007ab7", "#005184"     # the Cursed site's blue: the important buttons, and "male"
 
@@ -187,7 +187,7 @@ class Window:
         links = ctk.CTkFrame(foot, fg_color="transparent")
         links.pack(anchor="w")
         for text, url in (("GitHub", GITHUB), ("Ko-fi", KOFI)):
-            link = ctk.CTkLabel(links, text=text, text_color=("#c2186b", "#f29cc0"), cursor="hand2")
+            link = ctk.CTkLabel(links, text=text, text_color=("#005184", "#34a9e3"), cursor="hand2")
             link.pack(side="left", padx=(0, 14))
             link.bind("<Button-1>", lambda e, u=url: webbrowser.open(u))
         ctk.CTkLabel(foot, text="© Cursed Entertainment 2026", text_color="gray45").pack(anchor="w")
